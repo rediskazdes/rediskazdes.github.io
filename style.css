@@ -1,77 +1,19 @@
-.e1_3 { 
-	overflow:hidden;
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.e1_3 { 
-	background-color:rgba(255, 255, 255, 1);
-	width:1280px;
-	height:832px;
-	position:absolute;
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.e1_9 { 
-	background-color:rgba(105.8846090734005, 160.19510239362717, 223.95092368125916, 1);
-	width:1280px;
-	height:64px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.e1_8 { 
-	color:rgba(255, 255, 255, 1);
-	width:65px;
-	height:24px;
-	position:absolute;
-	left:172px;
-	top:20px;
-	font-family:Josefin Sans;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e1_7 { 
-	color:rgba(255, 255, 255, 1);
-	width:236px;
-	height:24px;
-	position:absolute;
-	left:352px;
-	top:20px;
-	font-family:Josefin Sans;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e1_10 { 
-	color:rgba(255, 255, 255, 1);
-	width:139px;
-	height:24px;
-	position:absolute;
-	left:703px;
-	top:20px;
-	font-family:Josefin Sans;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e1_11 { 
-	color:rgba(255, 255, 255, 1);
-	width:151px;
-	height:24px;
-	position:absolute;
-	left:957px;
-	top:20px;
-	font-family:Josefin Sans;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
-}
-.e1_13 { 
-	color:rgba(0, 0, 0, 1);
-	width:128px;
-	height:24px;
-	position:absolute;
-	left:144px;
-	top:197px;
-	font-family:Josefin Sans;
-	text-align:left;
-	font-size:24px;
-	letter-spacing:0;
+
+.button-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
 }
