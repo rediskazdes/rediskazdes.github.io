@@ -30,10 +30,10 @@ body, html {
 }
 
 .profile-image {
-    width: 40%; /* Adjust according to your preference */
+    width: 75%; /* Adjust according to your preference */
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    margin: 20px;
+    margin: 5px;
 }
 
 .profile-image img {
