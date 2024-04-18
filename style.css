@@ -1,3 +1,6 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .profile-image img {
     width: 50%; /* Set the width of the image to 50% of its original size */
@@ -9,6 +12,12 @@
     background-color: #C3E1FF; /* Example background color */
 }
 
+
+h3.custom-heading {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+}
 
 .link-custom {
     display: inline-block;
@@ -25,4 +34,44 @@
 .link-custom:hover {
     background-color: #131F33;
     color: white;
+}
+
+
+
+
+.tile {
+    width: 35vw; /* Adjust width as needed */
+    height: 35vh; /* Adjust height as needed */
+    border-radius: 10px; /* Rounded corners for the tile */
+    overflow: hidden; /* Ensure the image stays within the bounds of the tile */
+    background-size: cover;
+}
+
+.tile-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for the content */
+}
+
+.tile-title {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the title bold */
+}
+
+.tile-description {
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.tile-content a {
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+}
+
+
+.row.align-items-center.justify-content-center.mt-5 * {
+    border: none;
 }
