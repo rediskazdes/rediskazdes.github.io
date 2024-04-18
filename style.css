@@ -54,6 +54,7 @@ h3.custom-heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     text-align: center;
     color: white; /* Text color for the content */
 }
