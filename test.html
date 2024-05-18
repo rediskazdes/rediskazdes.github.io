@@ -17,41 +17,46 @@
             border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         .message {
             font-size: 1.2em;
             color: #333;
         }
-        .instagram-message {
+        .ios-message {
+            position: absolute;
+            top: 10px;
+            right: 10px;
             background-color: #f8d7da;
             color: #721c24;
             border: 1px solid #f5c6cb;
             padding: 10px;
             border-radius: 5px;
-            display: flex;
+            display: none;
             align-items: center;
-            justify-content: center;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <p class="message">This is a test page for Instagram redirection.</p>
-        <div class="instagram-message" style="display: none;">
-            Open external browser
+        <div class="ios-message">
+            Open in external browser
         </div>
     </div>
 
     <script>
         var userAgent = navigator.userAgent;
-        var messageElement = document.querySelector('.message');
-        var instagramMessageElement = document.querySelector('.instagram-message');
+        var iosMessageElement = document.querySelector('.ios-message');
 
         if (userAgent.includes("Instagram")) {
-            instagramMessageElement.style.display = "flex";
-        } else {
-            messageElement.innerText = "";
+            if (/Android/i.test(userAgent)) {
+                // Android: force open in default browser
+                window.location.href = "https://rediskazdes.github.io/test.html";
+            } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                // iOS: show message
+                iosMessageElement.style.display = "flex";
+            }
         }
     </script>
 </body>
