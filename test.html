@@ -30,11 +30,20 @@
     </div>
 
     <script>
-        if (navigator.userAgent.includes("Instagram")) {
+        var userAgent = navigator.userAgent;
+
+        if (userAgent.includes("Instagram")) {
             window.location.href = "https://mywebsite.com/DummyBytes";
         } else {
-            document.querySelector('.message').innerText = "You are not using Instagram.";
+            var messageElement = document.querySelector('.message');
+            if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                messageElement.innerText = "hello";
+            } else if (/Android/i.test(userAgent)) {
+                messageElement.innerText = "You are using Android.";
+            } else {
+                messageElement.innerText = "You are not using Instagram.";
+            }
         }
-    </script>
+     </script>
 </body>
 </html>
